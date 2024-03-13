@@ -1,0 +1,20 @@
+{
+  "openapi" : "3.0.3",
+  "info" : {
+    "title": "Todolist RESTfull API",
+    "version": "1",
+    "description": "Open API for Todolistxq RESTful API",
+    "termsOfService": "https:www.ibrahimelgibran.com",
+    "contact": {
+      "name": "Ibrahim EL Gibran",
+      "email": "ibrahimelgibran17@gmail.com",
+      "url": "https:www.ibrahimelgibran.com"
+    },
+    "license": {
+      "name": "APACHE 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0 "
+    }
+  },
+  "servers": [],
+  "paths": {}
+}
