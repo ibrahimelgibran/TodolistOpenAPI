@@ -36,5 +36,89 @@
     "description": "Youtube Ibrahim El Gibran",
     "url": "https://www.youtube.com/@iegcode"
   },
-  "paths": {}
+  "paths": {
+    "/todolist" : {
+      "get": {
+        "summary": "Get all todolist",
+        "description": "Get all todolist by default",
+        "parameters": [
+          {
+            "name": "include done",
+            "in": "query",
+            "required": false,
+            "description": "Is include done todolist",
+            "schema": {
+              "type": "boolean",
+              "nullable": true,
+              "default": false
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "description": "Filter todolist by name",
+            "schema": {
+              "type": "string",
+              "nullable": true,
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+
+        }
+      },
+      "post": {
+        "summary": "Create new todolist",
+        "description": "Create new todolist to database",
+        "responses": {
+
+        }
+      }
+    },
+    "/todolist/{todolistId}" : {
+      "put": {
+        "summary": "Update existing todolist",
+        "description": "Update existing todolist in database",
+        "parameters": [
+          {
+            "name": "todolistId",
+            "in": "path",
+            "required": true,
+            "description": "Todolist id for delete",
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+
+        }
+      },
+      "delete": {
+        "summary": "Delete existing todolist",
+        "description": "Delete existing todolist in database",
+        "parameters": [
+          {
+            "name": "todolistId",
+            "in": "path",
+            "required": true,
+            "description": "Todolist id for delete",
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+
+        }
+      }
+    }
+  }
 }
